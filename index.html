@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Anurag Singh — Data Analytics Manager</title>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet"/>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+  
   <style>
     /* ── TOKENS ── */
     :root {
@@ -252,32 +252,7 @@
     }
     .stat-block { text-align: center; }
 
-    /* ── PDF SOURCE NOTE ── */
-    .pdf-source-bar {
-      background: rgba(13,27,42,0.04);
-      border-top: 1px solid var(--rule);
-      padding: 14px 48px;
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      font-size: 12px;
-      color: var(--mid);
-    }
-    .pdf-source-bar a {
-      color: var(--accent);
-      font-weight: 600;
-      text-decoration: none;
-    }
-    .pdf-source-bar a:hover { text-decoration: underline; }
-    .pdf-status {
-      display: inline-block;
-      width: 8px; height: 8px;
-      border-radius: 50%;
-      background: #ccc;
-      margin-right: 4px;
-    }
-    .pdf-status.loaded { background: var(--accent); }
-    .pdf-status.error  { background: var(--accent2); }
+
 
     /* ── LOADING ── */
     #loading-overlay {
@@ -316,11 +291,7 @@
 </head>
 <body>
 
-<!-- LOADING -->
-<div id="loading-overlay">
-  <div class="loader-ring"></div>
-  <div class="loader-text">Loading resume from source…</div>
-</div>
+
 
 <!-- HERO (static shell — populated by JS) -->
 <header class="hero">
@@ -512,13 +483,7 @@
   </aside>
 </main>
 
-<!-- PDF SOURCE BAR -->
-<footer class="pdf-source-bar" id="pdf-download">
-  <span id="pdf-status" class="pdf-status"></span>
-  <span id="pdf-status-text">Resume source: </span>
-  <a id="pdf-source-link" href="#" target="_blank" rel="noopener">DAUSResume.pdf</a>
-  <span style="margin-left:auto;font-size:11px;color:var(--rule)">Built with PDF.js · Hosted on GitHub Pages</span>
-</footer>
+
 
 <script>
   // ─────────────────────────────────────────────────────────────────
